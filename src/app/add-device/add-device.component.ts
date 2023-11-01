@@ -40,6 +40,7 @@ export class AddDeviceComponent implements OnInit {
     if (this.form.invalid) {
       this.form.markAllAsTouched();
       console.log(this._data)
+      return;
     }
     if (this._data == null) {
       this.insert();
