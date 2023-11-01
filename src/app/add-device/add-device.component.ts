@@ -3,7 +3,6 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {AllItems} from "../app.model";
 import {addDoc, collection, doc, Firestore, updateDoc} from "@angular/fire/firestore";
-import {DeviceItem} from "../device-item/device-item.model";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 
@@ -48,17 +47,6 @@ export class AddDeviceComponent implements OnInit {
   }
 
   insert() {
-    // // Get a reference to the 'form' collection
-    // const collectionRef = this.afr.collection('devices');
-    //
-    // // Add the document to the collection
-    // // collectionRef.add(this.form.getRawValue())
-    // //   .then((docRef: any) => {
-    // //     console.log('Document added with ID: ', docRef.id);
-    // //   })
-    // //   .catch((error: any) => {
-    // //     console.error('Error adding document: ', error);
-    // //   });
     const collectionReference = collection(this.firestore, 'devices');
     addDoc(collectionReference, this.form.getRawValue())
       .then(() => {
@@ -70,17 +58,13 @@ export class AddDeviceComponent implements OnInit {
       });
   }
 
-  onChangeIcon(){
-  }
-
-
   items: string[] = [
     'kitchen',
     'tv',
     'heat_pump',
     'light_mode',
-    'device_thermostat'
-
+    'device_thermostat',
+    'volume_up'
   ]
 
   onClose() {
