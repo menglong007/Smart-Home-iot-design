@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "apl-midterm-9d98c": {
+      "hosting": {
+        "Smart-Home-iot-design": [
+          "apl-midterm-9d98c"
+        ]
+      }
+    },
+    "angular-project-a47fc": {
+      "hosting": {
+        "Smart-Home-iot-design": [
+          "angular-project-a47fc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-project-a47fc"
+  }
+}

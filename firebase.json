@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "Smart-Home-iot-design",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

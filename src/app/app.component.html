@@ -1,0 +1,42 @@
+<div class="relative">
+  <img class=" w-screen h-screen absolute "
+       src="https://images2.alphacoders.com/602/602237.jpg" alt="photo">
+</div>
+
+<div class="absolute flex flex-col top-1/4 p-2 m-2">
+  <div class="bg-gray-200 w-14 h-full flex flex-col justify-center items-center space-y-6 rounded-2xl ">
+    <app-room *ngFor="let room of rooms" [data]="room"></app-room>
+  </div>
+</div>
+
+<div class="absolute right-0 top-1/4 m-4">
+  <button class="bg-gray-300 w-32 h-12 rounded-2xl transform transition duration-200 hover:scale-110 hover:bg-blue-600 "
+          (click)="openDialog()">Add
+  </button>
+</div>
+
+<div class="absolute grid grid-cols-2 right-0 top-1/3  ">
+  <app-device-item *ngFor="let device of devices" [data]="device" (onChange)="onChange($event)"></app-device-item>
+</div>
+
+<div class="absolute bottom-0 w-full flex flex-col justify-center items-center p-6">
+  <app-air-conditioner *ngFor="let a of air" [numberValue]="a.value"
+                       (change)="onValueChange($event)"></app-air-conditioner>
+</div>
+
+<div class="absolute">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<button (click)="isFoo = !isFoo"  >
+
+  <mat-icon *ngIf="isFoo"
+    class="text-blue-700 hover:bg-gray-400 hover:text-blue-700 rounded-2xl transform transition duration-75 hover:scale-150 h-[50px] w-[50px] text-[40px] justify-center items-center flex"
+  >
+    {{data.icon}}
+  </mat-icon>
+  <mat-icon *ngIf="!isFoo"
+    class="hover:bg-gray-400 hover:text-white rounded-2xl transform transition duration-75 hover:scale-150 h-[50px] w-[50px] text-[40px] justify-center items-center flex"
+    >
+    {{data.icon}}
+  </mat-icon>
+</button>
+
+
+
+
+

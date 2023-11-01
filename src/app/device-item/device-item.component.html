@@ -1,0 +1,10 @@
+<div
+  class="bg-gray-300 hover:text-white shadow-md flex flex-col justify-between items-center w-32 h-32 rounded-2xl  m-4 p-2 transform transition duration-200 hover:scale-110 hover:bg-blue-600 ">
+  <section class="flex flex-row w-full justify-end">
+    <mat-slide-toggle color="primary" [checked]="data.value" (change)="onToggle($event)" ></mat-slide-toggle>
+  </section>
+  <mat-icon class="h-[50px] w-[50px] text-[50px]  ">{{data.icon}}</mat-icon>
+  <span class="flex items-end justify-center ">{{data.name}}</span>
+
+</div>
+
