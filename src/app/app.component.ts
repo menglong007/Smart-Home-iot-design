@@ -14,8 +14,6 @@ import {AllItems} from "./app.model";
 })
 export class AppComponent implements OnInit {
 
-
-
   devices: DeviceItem[] = [
     {
       name: 'Refrigerator',
